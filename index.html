@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Running Text - Mahasiswa TI</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0f172a;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 0 20px #38bdf8;
+        }
+
+        h1 {
+            color: #38bdf8;
+            margin-bottom: 25px;
+        }
+
+        .running-text {
+            overflow: hidden;
+            white-space: nowrap;
+            background: #020617;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #38bdf8;
+        }
+
+        .running-text span {
+            display: inline-block;
+            color: #22d3ee;
+            font-size: 30px;
+            font-weight: bold;
+            animation: berjalan 10s linear infinite;
+        }
+
+        @keyframes berjalan {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        footer {
+            color: white;
+            margin-top: 25px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>RUNNING TEXT MAHASISWA TI</h1>
+
+        <div class="running-text">
+            <span>
+                SAYA BANGGA MENJADI MAHASISWA TI
+                &nbsp;&nbsp;&nbsp; ★ &nbsp;&nbsp;&nbsp;
+            </span>
+        </div>
+
+        <footer>
+            Teknologi Informasi | Proud to be TI
+        </footer>
+    </div>
+
+</body>
+</html>
